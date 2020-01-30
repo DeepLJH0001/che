@@ -7,6 +7,8 @@
 # which accompanies this distribution, and is available at
 # http://www.eclipse.org/legal/epl-v10.html
 
+export PATH=$PATH:/opt/rh/rh-maven33/root/bin
+
 buildAndDeployArtifacts() {
   set -x
   scl enable rh-maven33 'mvn clean install -U -Pintegration'
@@ -346,8 +348,7 @@ function setupEnvs() {
     QUAY_ECLIPSE_CHE_USERNAME \
     QUAY_ECLIPSE_CHE_PASSWORD)"
 
-  export PATH=$PATH:/opt/rh/rh-maven33/root/bin
-}
+ }
 
 function configureGithubTestUser() {
   echo "Configure GitHub test users"

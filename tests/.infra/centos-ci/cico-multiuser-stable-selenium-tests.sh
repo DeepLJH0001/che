@@ -17,7 +17,6 @@ installCheCtl
 installAndStartMinishift
 loginToOpenshiftAndSetDevRole
 deployCheIntoCluster --chenamespace=eclipse-che
-seleniumTestsSetup
 createTestUserAndObtainUserToken
 installDockerCompose
 seleniumTestsSetup
