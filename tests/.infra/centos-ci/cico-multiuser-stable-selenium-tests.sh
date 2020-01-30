@@ -16,7 +16,7 @@ installDependencies
 installCheCtl
 installAndStartMinishift
 loginToOpenshiftAndSetDevRole
-deployCheIntoCluster --chenamespace=eclipse-che --che-operator
+deployCheIntoCluster --chenamespace=eclipse-che
 seleniumTestsSetup
 createTestUserAndObtainUserToken
 installDockerCompose
